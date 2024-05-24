@@ -15,8 +15,10 @@
             </template>
             <template #end>
                 <div class="flex align-items-center">
-                    <SplitButton label="Acceder" :model="IngresosWithUrls" severity="danger" />
-
+                    <Button class="reintegro-button" label="Reintegro" @click="reintegro()" icon="pi pi-wallet" outlined
+                        style="margin-right: 4px;" />
+                    <SplitButton @click="abrirVentana()" label="EXTRANET" :model="IngresosWithUrls" severity="danger"
+                        outlined />
                 </div>
             </template>
         </Menubar>
@@ -26,6 +28,13 @@
 <script setup>
 import { ref } from "vue";
 const activeSection = ref(null);
+const abrirVentana = () => {
+    window.open('https://www.itdepsis.com.ar/mwn.htm', '_blank');
+}
+
+const reintegro = () => {
+    window.open('https://www.itdepsis.com.ar/cgi-bin/wspd_cgi.sh/WService=desmw/solirein.htm?pri=s&uweb=s', '_blank');
+}
 
 const items = ref([
     {
@@ -41,10 +50,6 @@ const items = ref([
 
     },
     {
-        label: 'Institucional',
-
-    },
-    {
         label: 'Contacto',
 
     },
@@ -52,20 +57,26 @@ const items = ref([
 ]);
 const IngresosWithUrls = ref([
     {
-        label: 'Extranet',
+        label: 'EXTRANET',
         url: 'https://www.itdepsis.com.ar/mwn.htm',
         target: '_blank'
     },
     {
-        label: 'Macro',
+        label: 'MACRO CLICK DE PAGO',
         url: 'https://pagos.macroclickpago.com.ar/SearchDeuda/796453',
         target: '_blank'
     },
     {
-        label: 'Pronto pago',
+        label: 'PRONTO PAGO',
         url: 'https://gasnea.prontopago.com.ar/?serviceid=1084',
         target: '_blank'
     },
+    {
+        label: 'REINTEGRO',
+        url: 'https://www.itdepsis.com.ar/cgi-bin/wspd_cgi.sh/WService=desmw/solirein.htm?pri=s&uweb=s',
+        target: '_blank'
+    },
+
 ]);
 
 const scrollToSection = (sectionId) => {
@@ -91,8 +102,14 @@ const scrollToSection = (sectionId) => {
     box-shadow: 0 12px 64px -4px rgba(35, 21, 91, 0.03), 0 8px 12px -6px rgba(35, 21, 91, 0.03);
 }
 
+@media only screen and (max-width: 600px) {
+    .reintegro-button {
+        display: none;
+    }
+}
+
 .menu a.active {
-    font-weight: bold;
+    font-weight: 500;
     color: #2c283b;
 }
 </style>

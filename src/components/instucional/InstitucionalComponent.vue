@@ -20,7 +20,7 @@
                     generan los eventos accidentalmente dañinos. Con más de 25.000 afiliados que confían en nuestros
                     servicios y respaldan nuestra experiencia y solidez.</p>
             </div>
-            <br>
+
         </div>
     </div>
 </template>
@@ -30,20 +30,17 @@
 <style scoped>
 .main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: fit-content;
-
+    height: 100vh;
 }
 
 .contenedor {
     display: flex;
     align-items: center;
-    height: 100vh;
     gap: 84px;
-    margin-top: 64px;
 }
 
 .text-container {
@@ -51,33 +48,10 @@
     padding-left: 3rem;
     color: #140453;
     padding: 16px;
-
-
 }
 
 .responsiveImg {
     display: none;
-}
-
-@media (max-width: 767px) {
-    .text-container {
-        width: 100%;
-        height: 100%;
-        padding-left: 3rem;
-        color: #140453;
-        padding: 16px;
-    }
-}
-
-@media (max-width: 767px) {
-    .responsiveImg {
-        display: flex;
-        width: 24rem;
-        height: auto;
-        border-radius: 8px 120px;
-        margin-bottom: 16px;
-
-    }
 }
 
 h2 {
@@ -93,38 +67,50 @@ h2 {
 }
 
 @media (max-width: 767px) {
+
     .contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 16px;
-    }
-}
 
-@media (max-width: 767px) {
+    }
+
     h2 {
         font-size: 2rem;
         margin-top: 5px !important;
         color: #140453;
     }
-}
 
-@media (max-width: 767px) {
     .main {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 16px;
+        height: 120vh;
     }
-}
 
-
-
-@media (max-width: 767px) {
     .BackgroundImg {
         display: none;
     }
+
+    .text-container {
+        width: 100%;
+        height: 100%;
+        padding-left: 3rem;
+        color: #140453;
+        padding: 16px;
+    }
+
+    .responsiveImg {
+        display: flex;
+        width: 24rem;
+        height: auto;
+        border-radius: 8px 120px;
+        margin-bottom: 16px;
+
+    }
+
 }
 </style>

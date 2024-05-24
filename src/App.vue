@@ -1,18 +1,14 @@
 <template>
-
   <div>
     <MenuBar class="menu-bar" />
     <HomeView />
-    <!-- <RouterView /> -->
+    <BottonEmergencias />
   </div>
-
 </template>
 <script setup>
-// import { RouterView } from 'vue-router'
 import MenuBar from './components/MenuBar.vue';
 import HomeView from './views/HomeView.vue';
-
-
+import BottonEmergencias from './components/BottonEmergencias.vue';
 
 </script>
 <style scoped>

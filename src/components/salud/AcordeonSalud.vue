@@ -1,8 +1,8 @@
 <template>
 
     <div class="card">
-
         <Accordion :activeIndex="0">
+
             <AccordionTab header="Plan Basico">
                 <ul>
                     <li>
@@ -29,7 +29,7 @@
                 </ul>
             </AccordionTab>
 
-            <AccordionTab header="Plan Mayor">
+            <AccordionTab header="Modulares">
                 <ul>
                     <li>
                         <p>Mayores de 65 años.</p>
