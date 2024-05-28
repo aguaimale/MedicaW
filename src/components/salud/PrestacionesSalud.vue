@@ -7,7 +7,7 @@
          <div>
             <h2>
                Garantía preventiva para<br />vos y
-               <span style="font-weight: 500; color: #00d386">tu familia.</span>
+               <span style="font-weight: 600; color: #00d386">tu familia.</span>
             </h2>
          </div>
       </div>

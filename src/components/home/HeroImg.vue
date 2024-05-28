@@ -16,8 +16,16 @@ import { ref, onMounted } from 'vue';
 import ejecutivoindustria from './brands/ejecutivoindustria.jpg';
 import durlero from './brands/durlero.jpg';
 import carpintero from './brands/carpintero.jpg';
+import talabartero from './brands/talabartero.jpg';
+import bicicletera from './brands/bicicletera.jpg';
 
-const backgrounds = [ejecutivoindustria, durlero, carpintero];
+const backgrounds = [
+   ejecutivoindustria,
+   durlero,
+   carpintero,
+   talabartero,
+   bicicletera,
+];
 let currentBackgroundIndex = 0;
 
 const backgroundUrl = ref(backgrounds[currentBackgroundIndex]);
@@ -38,10 +46,12 @@ onMounted(() => {
    align-items: center;
    justify-content: center;
    height: 650px;
-   width: 100%;
+   width: 95%;
    background-size: cover;
    background-position: center;
    transition: background-image 2s ease;
+   border-radius: 8px;
+   margin-top: 24px;
 }
 
 .hero-logo {
@@ -66,6 +76,7 @@ onMounted(() => {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   border-radius: 8px;
 }
 
 .button-salud {

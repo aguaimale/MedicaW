@@ -21,12 +21,22 @@
             </p>
          </div>
       </div>
-
       <div style="width: 100%; display: flex; justify-content: center">
          <p>
             © 2024 Medicar Work. Todos los derechos reservados Nueva Mutual de
             Servicios NU.MU.SE.
          </p>
+      </div>
+      <div class="dataweb">
+         <div>
+            <img
+               src="@/assets/DATAWEB.jpg"
+               alt="dataweb"
+               width="30px"
+               @click="openLink"
+               style="cursor: pointer"
+            />
+         </div>
       </div>
    </div>
    <Dialog
@@ -255,7 +265,12 @@
 </template>
 <script setup>
 import { ref } from 'vue';
+
 const visible = ref(false);
+
+const openLink = () => {
+   window.open('http://qr.afip.gob.ar/?qr=Covt5BT3CuwEFuU7IipfUA,,', '_blank');
+};
 </script>
 <style scoped>
 p {
@@ -269,7 +284,6 @@ p {
    justify-content: center;
    align-items: center;
    width: 100%;
-   padding: 8px;
 }
 
 .info {
@@ -282,6 +296,11 @@ i {
    font-size: 0.9rem;
    margin-right: 4px;
    color: rgb(255, 255, 255);
+}
+.dataweb {
+   width: 100%;
+   display: flex;
+   justify-content: center;
 }
 
 span {

@@ -2,17 +2,18 @@
    <div class="main">
       <div class="contenedor">
          <div class="contenedor-text">
-            <h2>Únete a Medicar Work</h2>
-            <h2 style="font-weight: 500">
-               Emergencias las 24 horas<br />
+            <h2>Medicar Work</h2>
+            <h2 style="font-weight: 500; font-size: 2rem">
+               Emergencias las 24 horas.<br />
+            </h2>
+            <h2 style="font-weight: 500; font-size: 2rem">
                <span><i class="pi pi-phone" style="font-size: 2rem"></i></span>
                0810-444-9675
             </h2>
-            <p>
-               Equipo profesional listo para responder.<br />
-               Atención cálida, eficiente y cercana a tus necesidades.
-            </p>
+            <p>Equipo profesional listo para responder.</p>
+            <p>Atención cálida, eficiente y cercana a tus necesidades.</p>
          </div>
+         <br />
          <div class="card-contacto">
             <Card
                v-motion-pop-visible-once
@@ -46,8 +47,6 @@
    </div>
 </template>
 <script setup>
-import { ref } from 'vue';
-
 const sendEmail = (email) => {
    window.location.href = 'mailto:' + email;
 };
@@ -74,6 +73,11 @@ const openWhatsApp = () => {
 .contenedor {
    padding: 16px;
    margin-top: 48px;
+   display: flex;
+   flex-direction: column;
+}
+.contenedor-text {
+   padding: 8px;
 }
 
 h2 {
@@ -98,26 +102,22 @@ h3 {
 
 @media (max-width: 767px) {
    h2 {
-      font-size: 2rem;
+      font-size: 1.2rem;
    }
-}
-
-.contenedor-form {
-   display: flex;
-   flex-direction: column;
-   gap: 16px;
-   padding: 8px;
+   h3 {
+      font-size: 1rem;
+   }
 }
 
 .card-contacto {
    display: flex;
+   flex-direction: column;
    align-items: center;
-   gap: 8px;
    width: 100%;
 }
 
 .card {
-   width: 250px;
+   width: 90%;
    cursor: pointer;
 }
 

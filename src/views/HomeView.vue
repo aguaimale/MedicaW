@@ -83,7 +83,7 @@ import Footer from '../components/footer/Footer.vue';
 
 #footer {
    background-color: rgb(82, 83, 85);
-   height: 20vh;
+
    padding: 16px;
    display: flex;
    color: aliceblue;

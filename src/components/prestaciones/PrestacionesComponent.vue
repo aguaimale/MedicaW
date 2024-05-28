@@ -169,7 +169,7 @@
       <div v-motion-pop-visible-once :delay="2900" class="container-buttons">
          <div class="calltoaction">
             <div>
-               <h2 class="call" style="color: ">¿PERSONAL SIN NOMINAR?</h2>
+               <h2 class="call">¿PERSONAL SIN NOMINAR?</h2>
                <h3>La unica prestadora que ampara este tipo de personal.</h3>
             </div>
             <Button
@@ -301,7 +301,7 @@ h3 {
 
    .call {
       font-size: 1.4rem;
-      color: white;
+      color: #23155b;
    }
 
    h3 {
