@@ -22,7 +22,7 @@
                <template #content>
                   <p class="m-3">
                      Libertad de uso de la suma indemnizatoria, incluso cuando
-                     tengas obra social o prepaga que cubra todos sus gastos
+                     tengas obra social o prepaga que cubra todos tus gastos
                      médicos.
                   </p>
                </template>
@@ -60,7 +60,7 @@
                <template #content>
                   <p class="m-0">
                      Planes Flexibles, adaptables a cada situación y
-                     posibilidad.
+                     posibilidad.*
                   </p>
                   <sub style="color: #ccc"> (*) Sin gastos de sellados. </sub>
                </template>

@@ -22,7 +22,7 @@
                            src="../icons/check-icon.svg"
                            alt="checkicon"
                      /></span>
-                     Intervenciones quirúrgicas
+                     Intervenciones quirúrgicas.
                   </p>
                </template>
             </Card>
@@ -36,7 +36,7 @@
                            src="../icons/check-icon.svg"
                            alt="checkicon"
                      /></span>
-                     Trasplantes. *
+                     Trasplantes.*
                   </p>
                </template>
             </Card>

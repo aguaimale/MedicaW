@@ -54,7 +54,7 @@
                         align-items: center;
                         justify-content: space-between;
                      "
-                     ><sub>(*)Prestación es a cargo de Chubb</sub>
+                     ><sub>(*)Prestación a cargo de Chubb</sub>
                      <img
                         class="chubblogo"
                         src="@/assets/chubblogo.svg"
@@ -127,7 +127,7 @@
                            align-items: center;
                            justify-content: space-between;
                         "
-                        ><sub>(*)Prestación es a cargo de Chubb</sub>
+                        ><sub>(*)Prestación a cargo de Chubb</sub>
                         <img
                            class="chubblogo"
                            src="@/assets/chubblogo.svg"
@@ -170,7 +170,7 @@
          <div class="calltoaction">
             <div>
                <h2 class="call">¿PERSONAL SIN NOMINAR?</h2>
-               <h3>La unica prestadora que ampara este tipo de personal.</h3>
+               <h3>La única prestadora que ampara este tipo de personal.</h3>
             </div>
             <Button
                label="Conocé más"
